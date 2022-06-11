@@ -1,0 +1,114 @@
+.container {
+  display: block;
+  width: 90rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.left {
+  background-color: hsl(228, 56%, 26%);
+  padding: 4rem 10rem 4rem 4rem;
+  border-radius: 1rem 7rem 1rem 1rem;
+
+  &__logo {
+    width: 11rem;
+  }
+
+  &__explore {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.5rem;
+
+    &__img {
+      width: 2.9rem;
+      height: 2.3rem;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(229, 57%, 11%);
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+
+.right {
+  position: relative;
+  width: 100%;
+  background-color: hsl(228, 56%, 26%);
+  padding: 4rem;
+  border-radius: 1rem;
+
+  &__storage {
+    margin-bottom: 1rem;
+  }
+
+  &__line {
+    height: 1.5rem;
+    display: block;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+    &__fill {
+      background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+      height: 100%;
+      width: 80%;
+      border-radius: 1rem;
+    }
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+}
+
+span {
+  font-weight: 700;
+}
+
+.msg-container {
+  position: absolute;
+  right: 3rem;
+  top: 0;
+}
+
+.msg {
+  background-color: white;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+  transform: translateY(-70%);
+
+  strong {
+    color: hsl(229, 57%, 11%);
+    font-size: 4rem;
+  }
+
+  span {
+    color: hsl(229, 7%, 55%);
+    margin-left: 1rem;
+    white-space: nowrap;
+  }
+}
+
+.triangle {
+  position: absolute;
+  right: 0rem;
+  top: 16%;
+  transform: rotate(-90deg);
+  background-color: white;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  width: 3rem;
+  height: 3rem;
+}

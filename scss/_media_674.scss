@@ -1,0 +1,31 @@
+@media only screen and (max-width: 674px) {
+  body {
+    background-image: url(/images/bg-mobile.png);
+    background-position: 100%;
+  }
+
+  .container {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .triangle {
+    display: none;
+  }
+
+  .msg-container {
+    right: 50%;
+    top: 80%;
+  }
+
+  .msg {
+    padding: 1rem 2rem;
+    transform: translateX(50%);
+  }
+}
